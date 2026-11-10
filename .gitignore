@@ -1,0 +1,13 @@
+# Системні файли Windows / macOS
+Thumbs.db
+ehthru.db
+Desktop.ini
+.DS_Store
+
+# Папки налаштувань IDE та редакторів
+.vscode/
+.idea/
+
+# Залежності та логи (якщо є)
+node_modules/
+*.log

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="GetDrive – підготовка до практичного іспиту з водіння у Львові" />
+    <title>GetDrive – підготовка до іспиту з водіння у Львові</title>
+
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+    <!-- Основні власні стилі проєкту -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="page">
+    <!-- Шапка містить бренд і навігацію сайтом. -->
+    <header class="site-header">
+      <div class="container header-content flex items-center justify-between gap-4">
+        <a class="logo min-h-11 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-green-700" href="#" aria-label="GetDrive — на головну">
+          <img src="assets/images/GetDrive_logotyp.png" alt="Логотип платформи GetDrive" class="logo-image">
+          <span>GetDrive</span>
+        </a>
+
+        <nav class="header-navigation hidden md:flex" aria-label="Основна навігація">
+          <a class="inline-flex min-h-11 items-center px-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-green-700" href="#routes">Маршрути</a>
+          <a class="inline-flex min-h-11 items-center px-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-green-700" href="#trainer">Тренажер</a>
+          <a class="inline-flex min-h-11 items-center px-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-green-700" href="#attempt-journal">Журнал відповідей</a>
+          <a class="inline-flex min-h-11 items-center px-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-green-700" href="#testimonials">Досвід</a>
+          <a class="inline-flex min-h-11 items-center px-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-green-700" href="#exam-location">Де іспит</a>
+          <a class="inline-flex min-h-11 items-center px-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-green-700" href="#learning-video">Відео</a>
+          <a class="inline-flex min-h-11 items-center px-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-green-700" href="#pdr-quiz">Тест ПДР</a>
+        </nav>
+
+        <a class="button button-small button-dark hidden !min-h-9 !px-3 md:inline-flex focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-green-700" href="#routes">Увійти</a>
+        <details class="mobile-navigation block md:hidden">
+          <summary aria-label="Перемкнути меню навігації" aria-controls="mobile-navigation-links" class="!min-h-11 !min-w-11 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-700">
+            <span class="menu-icon"></span>
+          </summary>
+          <nav class="mobile-navigation-links" id="mobile-navigation-links" aria-label="Мобільна навігація">
+            <a class="inline-flex min-h-11 items-center px-3 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-700" href="#routes">Маршрути</a>
+            <a class="inline-flex min-h-11 items-center px-3 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-700" href="#trainer">Тренажер</a>
+            <a class="inline-flex min-h-11 items-center px-3 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-700" href="#attempt-journal">Журнал відповідей</a>
+            <a class="inline-flex min-h-11 items-center px-3 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-700" href="#testimonials">Досвід</a>
+            <a class="inline-flex min-h-11 items-center px-3 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-700" href="#exam-location">Де іспит</a>
+            <a class="inline-flex min-h-11 items-center px-3 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-700" href="#learning-video">Навчальні відео</a>
+            <a class="inline-flex min-h-11 items-center px-3 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-700" href="#pdr-quiz">Тест ПДР</a>
+          </nav>
+        </details>
+      </div>
+    </header>
+
+    <!-- Єдиний main містить основний вміст сторінки. -->
+    <main class="container">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="hero-eyebrow">ПРАКТИЧНИЙ ІСПИТ · ЛЬВІВ</p>
+          <h1>Підготовка до практичного іспиту з водіння</h1>
+          <p>Відпрацьовуйте правила дорожнього руху на схемах перехресть, розв’язуйте ситуації та переглядайте відповіді. Матеріали присвячені підготовці до іспиту у Львові.</p>
+          <div class="hero-actions">
+            <a class="button button-primary !min-h-11 w-full sm:w-auto" href="#trainer">Почати тренування</a>
+            <a class="button button-outline !min-h-11 w-full sm:w-auto" href="#routes">Обрати схему
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="hero-note"><span class="note-star">✦</span> 6 навчальних схем · вправи з ПДР · журнал відповідей</div>
+        </div>
+
+        <div class="route-preview">
+          <div class="preview-label">Навчальна схема · приклад №2</div>
+          <!-- CSS-схема має текстову назву для допоміжних технологій. -->
+          <div class="map-grid" role="img" aria-label="Навчальна схема перехрестя з поворотом">
+            <span class="map-road map-road-horizontal"></span>
+            <span class="map-road map-road-vertical"></span>
+            <span class="map-route map-route-horizontal"></span>
+            <span class="map-route map-route-vertical"></span>
+            <span class="map-point map-point-start"></span>
+            <span class="map-point map-point-end"></span>
+          </div>
+          <div class="preview-caption">Навчальний приклад перехрестя</div>
+          <div class="map-credit">Схематичне зображення</div>
+        </div>
+      </section>
+
+      <section class="benefits section-block" id="benefits">
+        <div class="section-heading">
+          <h2>Інструменти для підготовки до іспиту</h2>
+          <p>Перегляньте навчальні схеми, розберіть ситуації ПДР і поверніться до своїх відповідей.</p>
+        </div>
+        <div class="benefit-grid">
+          <article class="benefit-card">
+            <h3>Схеми для тренування</h3>
+            <p>Схематичні приклади перехресть, поворотів і кільцевого руху.</p>
+            <a class="text-link inline-flex min-h-11 items-center" href="#routes">Переглянути схеми</a>
+          </article>
+          <article class="benefit-card">
+            <h3>Тренажер ПДР</h3>
+            <p>Оберіть дію в дорожній ситуації та прочитайте пояснення до відповіді.</p>
+            <a class="text-link inline-flex min-h-11 items-center" href="#trainer">Розв’язати ситуації</a>
+          </article>
+          <article class="benefit-card">
+            <h3>Журнал відповідей</h3>
+            <p>Перегляньте вибрані відповіді та позначки про правильність у цьому браузері.</p>
+            <a class="text-link inline-flex min-h-11 items-center" href="#attempt-journal">Переглянути відповіді</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="why-section section-block">
+        <div class="section-heading">
+          <h2>Як користуватися матеріалами</h2>
+        </div>
+        <div class="reason-list">
+          <div class="reason-item"><span class="reason-icon"></span><p>Перегляньте навчальні схеми й зверніть увагу на показані повороти та перехрестя.</p></div>
+          <div class="reason-item"><span class="reason-icon"></span><p>У тренажері оберіть відповідь на ситуацію та прочитайте пояснення.</p></div>
+          <div class="reason-item"><span class="reason-icon"></span><p>У журналі перевірте, на які ситуації ви вже відповідали та де помилилися.</p></div>
+        </div>
+      </section>
+
+      <section class="routes section-block" id="routes">
+        <div class="section-heading">
+          <h2>Схеми для тренування</h2>
+          <p>Це схематичні приклади для тренування, а не підтверджені офіційні маршрути ТСЦ МВС.</p>
+        </div>
+        <div class="route-grid mx-auto grid max-w-7xl grid-cols-1 gap-6 px-4 py-8 sm:grid-cols-2 lg:grid-cols-3 xl:gap-8">
+          <article class="group flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition duration-300 ease-out hover:-translate-y-1 hover:shadow-xl">
+            <figure class="relative aspect-[16/9] overflow-hidden bg-slate-100" role="img" aria-label="Навчальна схема з прямою ділянкою, перехрестям і поворотом праворуч">
+              <svg class="h-full w-full" viewBox="0 0 640 360" fill="none" aria-hidden="true">
+                <path d="M0 115H640M0 245H640M205 0V360M435 0V360" stroke="#CBD5E1" stroke-width="54"/>
+                <path d="M0 115H640M0 245H640M205 0V360M435 0V360" stroke="#F8FAFC" stroke-width="2" stroke-dasharray="10 10"/>
+                <path d="M60 115H435V300" stroke="#2563EB" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="60" cy="115" r="15" fill="#2563EB" stroke="white" stroke-width="6"/>
+                <circle cx="435" cy="300" r="15" fill="#2563EB" stroke="white" stroke-width="6"/>
+              </svg>
+              <figcaption class="absolute left-4 top-4 rounded-full bg-white/95 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">Навчальна схема №2</figcaption>
+              <span class="absolute right-4 top-4 rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-800">Перехрестя й поворот</span>
+            </figure>
+            <div class="flex flex-1 flex-col p-4 sm:p-6 lg:p-8">
+              <header>
+                <h3 class="font-[Raleway] text-base font-semibold leading-snug text-slate-900 sm:text-lg">Перехрестя та поворот</h3>
+              </header>
+              <p class="mt-3 text-sm leading-6 text-slate-600 md:text-base">На схемі показано рух через перехрестя з поворотом на перпендикулярну вулицю.</p>
+              <a class="route-link mt-auto inline-flex min-h-11 w-full items-center justify-center rounded-lg bg-blue-600 px-4 py-3 text-sm font-semibold text-white transition duration-200 hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600" href="#trainer" data-route="2">Тренуватися</a>
+            </div>
+          </article>
+          <article class="group flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition duration-300 ease-out hover:-translate-y-1 hover:shadow-xl">
+            <figure class="relative aspect-[16/9] overflow-hidden bg-slate-100" role="img" aria-label="Навчальна схема з кільцевою ділянкою та виїздом">
+              <svg class="h-full w-full" viewBox="0 0 640 360" fill="none" aria-hidden="true">
+                <path d="M0 110H640M0 250H640M190 0V360M450 0V360" stroke="#CBD5E1" stroke-width="54"/>
+                <path d="M0 110H640M0 250H640M190 0V360M450 0V360" stroke="#F8FAFC" stroke-width="2" stroke-dasharray="10 10"/>
+                <circle cx="320" cy="180" r="64" stroke="#CBD5E1" stroke-width="32"/>
+                <path d="M55 110H256A64 64 0 0 1 384 110H450V300" stroke="#2563EB" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="55" cy="110" r="15" fill="#2563EB" stroke="white" stroke-width="6"/>
+                <circle cx="450" cy="300" r="15" fill="#2563EB" stroke="white" stroke-width="6"/>
+              </svg>
+              <figcaption class="absolute left-4 top-4 rounded-full bg-white/95 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">Навчальна схема №3</figcaption>
+              <span class="absolute right-4 top-4 rounded-full bg-rose-100 px-3 py-1 text-xs font-semibold text-rose-800">Кільцевий рух</span>
+            </figure>
+            <div class="flex flex-1 flex-col p-4 sm:p-6 lg:p-8">
+              <header>
+                <h3 class="font-[Raleway] text-base font-semibold leading-snug text-slate-900 sm:text-lg">Кільцевий рух і з’їзд</h3>
+              </header>
+              <p class="mt-3 text-sm leading-6 text-slate-600 md:text-base">Схема починається на прямій ділянці, проходить через кільце й завершується виїздом на перпендикулярну дорогу.</p>
+              <a class="route-link mt-auto inline-flex min-h-11 w-full items-center justify-center rounded-lg bg-blue-600 px-4 py-3 text-sm font-semibold text-white transition duration-200 hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600" href="#trainer" data-route="3">Тренуватися</a>
+            </div>
+          </article>
+          <article class="group flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition duration-300 ease-out hover:-translate-y-1 hover:shadow-xl">
+            <figure class="relative aspect-[16/9] overflow-hidden bg-slate-100" role="img" aria-label="Навчальна схема з поворотом на перехресті">
+              <svg class="h-full w-full" viewBox="0 0 640 360" fill="none" aria-hidden="true">
+                <path d="M0 115H640M0 245H640M205 0V360M435 0V360" stroke="#CBD5E1" stroke-width="54"/>
+                <path d="M0 115H640M0 245H640M205 0V360M435 0V360" stroke="#F8FAFC" stroke-width="2" stroke-dasharray="10 10"/>
+                <path d="M60 245H205V115H500" stroke="#2563EB" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="60" cy="245" r="15" fill="#2563EB" stroke="white" stroke-width="6"/>
+                <circle cx="500" cy="115" r="15" fill="#2563EB" stroke="white" stroke-width="6"/>
+              </svg>
+              <figcaption class="absolute left-4 top-4 rounded-full bg-white/95 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">Навчальна схема №5</figcaption>
+              <span class="absolute right-4 top-4 rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-800">Поворот</span>
+            </figure>
+            <div class="flex flex-1 flex-col p-4 sm:p-6 lg:p-8">
+              <header>
+                <h3 class="font-[Raleway] text-base font-semibold leading-snug text-slate-900 sm:text-lg">Поворот на перехресті</h3>
+              </header>
+              <p class="mt-3 text-sm leading-6 text-slate-600 md:text-base">Маршрут схеми переходить із нижньої дороги на поперечну через перехрестя.</p>
+              <a class="route-link mt-auto inline-flex min-h-11 w-full items-center justify-center rounded-lg bg-blue-600 px-4 py-3 text-sm font-semibold text-white transition duration-200 hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600" href="#trainer" data-route="5">Тренуватися</a>
+            </div>
+          </article>
+          <article class="group flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition duration-300 ease-out hover:-translate-y-1 hover:shadow-xl">
+            <figure class="relative aspect-[16/9] overflow-hidden bg-slate-100" role="img" aria-label="Навчальна схема з прямою ділянкою дороги та поворотом">
+              <svg class="h-full w-full" viewBox="0 0 640 360" fill="none" aria-hidden="true">
+                <path d="M0 115H640M0 245H640M205 0V360M435 0V360" stroke="#CBD5E1" stroke-width="54"/>
+                <path d="M60 245H205V115H500" stroke="#2563EB" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="60" cy="245" r="15" fill="#2563EB" stroke="white" stroke-width="6"/>
+                <circle cx="500" cy="115" r="15" fill="#2563EB" stroke="white" stroke-width="6"/>
+              </svg>
+              <figcaption class="absolute left-4 top-4 rounded-full bg-white/95 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">Навчальна схема №1</figcaption>
+              <span class="absolute right-4 top-4 rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold text-emerald-800">Поворот</span>
+            </figure>
+            <div class="flex flex-1 flex-col p-5 sm:p-6">
+              <header><h3 class="font-[Raleway] text-lg font-semibold leading-snug text-slate-900">Прямий рух і поворот</h3></header>
+              <p class="mt-3 text-sm leading-6 text-slate-600">Пряма ділянка зі стартом знизу переходить у поперечну дорогу через перехрестя.</p>
+              <a class="route-link mt-auto inline-flex min-h-11 w-full items-center justify-center rounded-lg bg-blue-600 px-4 py-3 text-sm font-semibold text-white transition duration-200 hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600" href="#trainer" data-route="1">Тренуватися</a>
+            </div>
+          </article>
+          <article class="group flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition duration-300 ease-out hover:-translate-y-1 hover:shadow-xl">
+            <figure class="relative aspect-[16/9] overflow-hidden bg-slate-100" role="img" aria-label="Навчальна схема з кількома послідовними поворотами">
+              <svg class="h-full w-full" viewBox="0 0 640 360" fill="none" aria-hidden="true">
+                <path d="M0 115H640M0 245H640M205 0V360M435 0V360" stroke="#CBD5E1" stroke-width="54"/>
+                <path d="M60 115H205V300H435V245H560" stroke="#2563EB" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="60" cy="115" r="15" fill="#2563EB" stroke="white" stroke-width="6"/>
+                <circle cx="560" cy="245" r="15" fill="#2563EB" stroke="white" stroke-width="6"/>
+              </svg>
+              <figcaption class="absolute left-4 top-4 rounded-full bg-white/95 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">Навчальна схема №4</figcaption>
+              <span class="absolute right-4 top-4 rounded-full bg-rose-100 px-3 py-1 text-xs font-semibold text-rose-800">Кілька поворотів</span>
+            </figure>
+            <div class="flex flex-1 flex-col p-5 sm:p-6">
+              <header><h3 class="font-[Raleway] text-lg font-semibold leading-snug text-slate-900">Послідовність поворотів</h3></header>
+              <p class="mt-3 text-sm leading-6 text-slate-600">На схемі показано кілька поворотів між паралельними та перпендикулярними вулицями.</p>
+              <a class="route-link mt-auto inline-flex min-h-11 w-full items-center justify-center rounded-lg bg-blue-600 px-4 py-3 text-sm font-semibold text-white transition duration-200 hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600" href="#trainer" data-route="4">Тренуватися</a>
+            </div>
+          </article>
+          <article class="group flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition duration-300 ease-out hover:-translate-y-1 hover:shadow-xl">
+            <figure class="relative aspect-[16/9] overflow-hidden bg-slate-100" role="img" aria-label="Навчальна схема з кільцевою ділянкою та виїздом">
+              <svg class="h-full w-full" viewBox="0 0 640 360" fill="none" aria-hidden="true">
+                <path d="M0 115H640M0 245H640M205 0V360M435 0V360" stroke="#CBD5E1" stroke-width="54"/>
+                <circle cx="320" cy="180" r="64" stroke="#CBD5E1" stroke-width="32"/>
+                <path d="M60 245H205V180H256A64 64 0 0 1 384 180H500" stroke="#2563EB" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="60" cy="245" r="15" fill="#2563EB" stroke="white" stroke-width="6"/>
+                <circle cx="500" cy="180" r="15" fill="#2563EB" stroke="white" stroke-width="6"/>
+              </svg>
+              <figcaption class="absolute left-4 top-4 rounded-full bg-white/95 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">Навчальна схема №6</figcaption>
+              <span class="absolute right-4 top-4 rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-800">Кільцевий рух</span>
+            </figure>
+            <div class="flex flex-1 flex-col p-5 sm:p-6">
+              <header><h3 class="font-[Raleway] text-lg font-semibold leading-snug text-slate-900">Кільцева ділянка та виїзд</h3></header>
+              <p class="mt-3 text-sm leading-6 text-slate-600">Під’їзд до кільцевої ділянки показано з нижньої дороги, виїзд — праворуч.</p>
+              <a class="route-link mt-auto inline-flex min-h-11 w-full items-center justify-center rounded-lg bg-blue-600 px-4 py-3 text-sm font-semibold text-white transition duration-200 hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600" href="#trainer" data-route="6">Тренуватися</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="exam-location section-block" id="exam-location" aria-labelledby="exam-location-heading">
+        <div class="section-heading">
+          <h2 id="exam-location-heading">Де проходить практичний іспит?</h2>
+          <p>Перегляньте позначене місце у Львові на карті та уточніть актуальні деталі перед поїздкою.</p>
+        </div>
+        <div class="embed-card map-embed">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2867.694271993263!2d23.944732172804585!3d49.8303990689485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae75ab35534cb%3A0xb6ce6e8baaa023dc!2z0KLQtdGA0LjRgtC-0YDRltCw0LvRjNC90LjQuSDRgdC10YDQstGW0YHQvdC40Lkg0YbQtdC90YLRgCDQnNCS0KEg4oSWNDY0MQ!5e0!3m2!1suk!2sua!4v1793739546580!5m2!1suk!2sua"
+            title="Карта розташування місця практичного іспиту у Львові"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="strict-origin-when-cross-origin">
+          </iframe>
+        </div>
+        <a class="text-link inline-flex min-h-11 items-center" href="https://www.google.com/maps/search/?api=1&amp;query=49.8303990689485%2C23.944732172804585" target="_blank" rel="noopener noreferrer">Відкрити в Google Maps</a>
+      </section>
+
+      <section class="trainer section-block" id="trainer">
+        <div class="section-heading">
+          <h2>Тренажер дорожніх ситуацій</h2>
+          <p>Ситуації спільні для всіх схем. Оберіть відповідь за ПДР і прочитайте пояснення після перевірки.</p>
+        </div>
+        <div class="trainer-selectors">
+          <label class="visually-hidden" for="exam-center">Сервісний центр</label>
+          <select id="exam-center" class="!min-h-11">
+            <option>ТСЦ МВС №4641 (Львів)</option>
+          </select>
+          <label class="visually-hidden" for="route-select">Навчальна схема для позначення у журналі відповідей</label>
+          <select id="route-select" class="!min-h-11">
+            <option value="1">Навчальна схема №1</option>
+            <option value="2">Навчальна схема №2</option>
+            <option value="3">Навчальна схема №3</option>
+            <option value="4">Навчальна схема №4</option>
+            <option value="5">Навчальна схема №5</option>
+            <option value="6">Навчальна схема №6</option>
+          </select>
+        </div>
+        <div class="trainer-content">
+          <div class="trainer-scene">
+            <div class="scene-label" id="scene-label">Ситуація 1 з 5</div>
+            <div class="scene-map" role="img" aria-label="Схематичне зображення дорожньої ситуації">
+              <span class="map-road map-road-horizontal"></span>
+              <span class="map-road map-road-vertical"></span>
+              <span class="car car-red">A</span>
+              <span class="car car-dark">B</span>
+            </div>
+            <p id="scene-prompt">На нерегульованому перехресті рівнозначних доріг автомобіль наближається до вас справа. Як слід діяти?</p>
+            <span class="scene-caption">Ситуація для самостійного аналізу за правилами дорожнього руху</span>
+          </div>
+          <div class="quiz-card">
+            <h3 id="quiz-question">Оберіть правильну дію</h3>
+            <div class="quiz-options" id="quiz-options" role="radiogroup" aria-labelledby="quiz-question">
+              <label class="quiz-option !min-h-11" for="answer-a"><input id="answer-a" type="radio" name="answer" value="0"> Поступитися автомобілю справа</label>
+              <label class="quiz-option !min-h-11" for="answer-b"><input id="answer-b" type="radio" name="answer" value="1"> Проїхати першим</label>
+              <label class="quiz-option !min-h-11" for="answer-c"><input id="answer-c" type="radio" name="answer" value="2"> Подати звуковий сигнал і продовжити рух</label>
+            </div>
+            <p class="quiz-feedback" id="quiz-feedback" role="status" aria-live="polite"></p>
+            <button class="button button-primary quiz-button !min-h-11 w-full" id="quiz-submit" type="button">Перевірити відповідь</button>
+          </div>
+        </div>
+        <div class="trainer-progress">
+          <span id="progress-label">Ситуація 1 з 5</span>
+          <span id="score-label">Правильних відповідей: 0</span>
+          <span class="progress-track" role="progressbar" aria-label="Прогрес тренажера" aria-valuemin="0" aria-valuemax="5" aria-valuenow="0"><span id="progress-fill"></span></span>
+        </div>
+      </section>
+
+      <section class="learning-video section-block" id="learning-video" aria-labelledby="learning-video-heading">
+        <div class="section-heading">
+          <h2 id="learning-video-heading">Навчальні відео</h2>
+          <p>Відеорозбір допоможе наочно повторити дорожні ситуації перед практичним іспитом.</p>
+        </div>
+        <div class="embed-card video-embed">
+          <iframe
+            src="https://www.youtube.com/embed/XHEAqp27q-Q"
+            title="Навчальне відео для підготовки до практичного іспиту з водіння"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </section>
+
+      <section class="pdr-quiz section-block" id="pdr-quiz" aria-labelledby="pdr-quiz-heading">
+        <div class="section-heading">
+          <h2 id="pdr-quiz-heading">Перевір свої знання ПДР</h2>
+          <p>Сім запитань про знаки, перехрестя, розмітку та ситуації під час практичного іспиту.</p>
+        </div>
+        <div class="knowledge-quiz" id="knowledge-quiz">
+          <div class="quiz-status">
+            <span id="pdr-progress-label">Запитання 1 із 7</span>
+            <span id="pdr-score-label">Правильних відповідей: 0</span>
+          </div>
+          <div class="progress-track" id="pdr-progress" role="progressbar" aria-label="Прогрес тесту ПДР" aria-valuemin="0" aria-valuemax="7" aria-valuenow="0">
+            <span id="pdr-progress-fill"></span>
+          </div>
+          <div class="pdr-question-panel" id="pdr-question-panel" aria-live="polite">
+            <fieldset class="pdr-fieldset">
+              <legend class="pdr-question" id="pdr-question"></legend>
+              <div class="pdr-options" id="pdr-options"></div>
+            </fieldset>
+            <p class="pdr-feedback" id="pdr-feedback" role="status" aria-live="polite"></p>
+          </div>
+          <div class="pdr-result" id="pdr-result" role="status" aria-live="polite" hidden></div>
+          <div class="pdr-actions">
+            <button class="button button-primary" id="pdr-check" type="button">Перевірити відповідь</button>
+            <button class="button button-outline" id="pdr-next" type="button" hidden>Наступне запитання</button>
+            <button class="button button-primary" id="pdr-restart" type="button" hidden>Пройти ще раз</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="attempt-journal section-block" id="attempt-journal" aria-labelledby="journal-heading">
+        <div class="section-heading">
+          <h2 id="journal-heading">Журнал відповідей</h2>
+          <p>Тут зберігаються ваші відповіді та їхня правильність у цьому браузері.</p>
+        </div>
+        <div class="journal-summary" id="journal-summary" aria-live="polite"></div>
+        <ol class="journal-list" id="journal-list"></ol>
+      </section>
+
+      <section class="testimonials section-block" id="testimonials">
+        <div class="section-heading">
+          <h2>Відгуки кандидатів</h2>
+          <p>Зараз підтверджених відгуків немає. Додамо їх лише за згодою авторів.</p>
+        </div>
+      </section>
+
+      <section class="call-to-action section-block" id="cta">
+        <h2>Продовжіть підготовку до практичного іспиту</h2>
+        <p>Оберіть відповідь у тренажері та перегляньте пояснення до ситуації.</p>
+        <a class="button button-primary !min-h-11 w-full sm:w-auto" href="#trainer">Перейти до тренажера</a>
+      </section>
+    </main>
+
+    <!-- Нижня частина сайту збирає довідкові посилання та контакти. -->
+    <footer class="bg-[#28645f] px-4 py-8 text-slate-200 sm:px-6 sm:py-10 lg:px-8 lg:py-12">
+      <div class="mx-auto grid max-w-7xl grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4 xl:gap-10">
+        <section aria-labelledby="footer-brand">
+          <a class="inline-flex min-h-11 items-center gap-2 rounded text-white transition-colors duration-200 hover:text-blue-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-300" href="#" aria-label="GetDrive — на головну">
+            <img src="assets/images/GetDrive_logotyp.png" alt="Логотип платформи GetDrive" loading="lazy" class="h-8 w-8">
+            <span id="footer-brand" class="font-[Raleway] text-lg font-bold">GetDrive</span>
+          </a>
+          <p class="mt-4 max-w-xs text-sm leading-6 text-slate-300 md:text-base">Навчальні схеми, ситуації з ПДР і журнал відповідей для підготовки до практичного іспиту у Львові.</p>
+        </section>
+
+        <nav aria-label="Додаткова навігація">
+          <h2 class="mb-4 font-semibold text-white">Навігація</h2>
+          <ul class="grid gap-3 text-sm">
+            <li><a class="inline-flex min-h-11 items-center rounded text-sm text-slate-300 transition-colors duration-200 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-300 md:text-base" href="#benefits">Про платформу</a></li>
+            <li><a class="inline-flex min-h-11 items-center rounded text-sm text-slate-300 transition-colors duration-200 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-300 md:text-base" href="#testimonials">Відгуки</a></li>
+            <li><a class="inline-flex min-h-11 items-center rounded text-sm text-slate-300 transition-colors duration-200 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-300 md:text-base" href="#cta">Почати підготовку</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="Послуги та корисні посилання">
+          <h2 class="mb-4 font-semibold text-white">Послуги</h2>
+          <ul class="grid gap-3 text-sm">
+            <li><a class="inline-flex min-h-11 items-center rounded text-sm text-slate-300 transition-colors duration-200 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-300 md:text-base" href="#routes">Схеми для тренування</a></li>
+            <li><a class="inline-flex min-h-11 items-center rounded text-sm text-slate-300 transition-colors duration-200 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-300 md:text-base" href="#trainer">Тренажер ПДР</a></li>
+            <li><a class="inline-flex min-h-11 items-center rounded text-sm text-slate-300 transition-colors duration-200 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-300 md:text-base" href="#attempt-journal">Журнал відповідей</a></li>
+          </ul>
+        </nav>
+
+        <section aria-labelledby="footer-contact">
+          <h2 id="footer-contact" class="mb-4 font-semibold text-white">Контакти та соцмережі</h2>
+          <address class="grid gap-3 text-sm not-italic md:text-base">
+            <a class="inline-flex min-h-11 w-fit items-center rounded text-slate-300 transition-colors duration-200 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-300" href="mailto:hello@getdrive.ua">hello@getdrive.ua</a>
+          </address>
+          <ul class="mt-4 flex flex-wrap gap-x-5 gap-y-3 text-sm">
+            <li><a class="inline-flex min-h-11 items-center rounded text-slate-300 transition-colors duration-200 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-300" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a class="inline-flex min-h-11 items-center rounded text-slate-300 transition-colors duration-200 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-300" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+          </ul>
+        </section>
+
+        <p class="border-t border-slate-700 pt-5 text-sm text-slate-300 md:col-span-2 lg:col-span-4">© 2026 GetDrive. Всі права захищені.</p>
+      </div>
+    </footer>
+  </div>
+  <script src="js/app.js" defer></script>
+  <script src="js/pdr-quiz.js" defer></script>
+</body>
+</html>
