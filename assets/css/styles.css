@@ -1,0 +1,18 @@
+.feedback-control {
+  transition: border-color 200ms ease, box-shadow 200ms ease, background-color 200ms ease;
+}
+
+.feedback-control.is-error,
+.feedback-checkbox.is-error {
+  border-color: #dc2626;
+}
+
+.feedback-control.is-success {
+  border-color: #16a34a;
+  background-image: linear-gradient(90deg, rgb(22 163 74 / 0.03), transparent);
+}
+
+.feedback-checkbox.is-success {
+  outline: 2px solid #16a34a;
+  outline-offset: 2px;
+}

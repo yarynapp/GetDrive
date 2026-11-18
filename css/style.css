@@ -331,7 +331,7 @@ svg {
   grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
   align-items: center;
   gap: clamp(var(--space-12), 4vw, var(--space-22));
-  padding: clamp(var(--space-16), 5vw, 64px) var(--space-6);
+  padding: clamp(var(--space-16), 5vw, 64px) var(--space-12);
 }
 
 .hero-copy {
@@ -1225,7 +1225,7 @@ footer a:focus-visible {
   .hero {
     grid-template-columns: minmax(0, 1fr);
     gap: var(--space-12);
-    padding: var(--space-16) var(--space-0);
+    padding: var(--space-16) var(--space-9);
   }
 
   .hero-copy h1 {
@@ -1319,7 +1319,7 @@ footer a:focus-visible {
 
   .hero {
     gap: var(--space-8);
-    padding: var(--space-9) var(--space-0) var(--space-10);
+    padding: var(--space-9) var(--space-8) var(--space-10);
   }
 
   .hero-copy h1 {
