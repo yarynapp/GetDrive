@@ -19,6 +19,9 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
     <!-- Основні власні стилі проєкту -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
@@ -66,7 +69,7 @@
       <section class="hero">
         <div class="hero-copy">
           <p class="hero-eyebrow">ПРАКТИЧНИЙ ІСПИТ · ЛЬВІВ</p>
-          <h1>Підготовка до практичного іспиту з водіння</h1>
+          <h1>Підготовка до практичного іспиту з водіння<br><span id="typed-text" class="typed-accent">Навчальні маршрути у Львові</span></h1>
           <p>Відпрацьовуйте правила дорожнього руху на схемах перехресть, розв’язуйте ситуації та переглядайте відповіді. Матеріали присвячені підготовці до іспиту у Львові.</p>
           <div class="hero-actions">
             <a class="button button-primary !min-h-11 w-full sm:w-auto" href="#trainer">Почати тренування</a>
@@ -135,7 +138,8 @@
         </div>
         <div class="route-grid mx-auto grid max-w-7xl grid-cols-1 gap-6 px-4 py-8 sm:grid-cols-2 lg:grid-cols-3 xl:gap-8">
           <article class="group flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition duration-300 ease-out hover:-translate-y-1 hover:shadow-xl">
-            <figure class="relative aspect-[16/9] overflow-hidden bg-slate-100" role="img" aria-label="Навчальна схема з прямою ділянкою, перехрестям і поворотом праворуч">
+            <figure class="relative aspect-[16/9] overflow-hidden bg-slate-100">
+              <a class="route-image-link" href="#" data-fancybox="routes-gallery" data-caption="Навчальна схема №2 — Перехрестя та поворот" aria-label="Відкрити навчальну схему №2">
               <svg class="h-full w-full" viewBox="0 0 640 360" fill="none" aria-hidden="true">
                 <path d="M0 115H640M0 245H640M205 0V360M435 0V360" stroke="#CBD5E1" stroke-width="54"/>
                 <path d="M0 115H640M0 245H640M205 0V360M435 0V360" stroke="#F8FAFC" stroke-width="2" stroke-dasharray="10 10"/>
@@ -143,6 +147,7 @@
                 <circle cx="60" cy="115" r="15" fill="#2563EB" stroke="white" stroke-width="6"/>
                 <circle cx="435" cy="300" r="15" fill="#2563EB" stroke="white" stroke-width="6"/>
               </svg>
+              </a>
               <figcaption class="absolute left-4 top-4 rounded-full bg-white/95 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">Навчальна схема №2</figcaption>
               <span class="absolute right-4 top-4 rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-800">Перехрестя й поворот</span>
             </figure>
@@ -155,7 +160,8 @@
             </div>
           </article>
           <article class="group flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition duration-300 ease-out hover:-translate-y-1 hover:shadow-xl">
-            <figure class="relative aspect-[16/9] overflow-hidden bg-slate-100" role="img" aria-label="Навчальна схема з кільцевою ділянкою та виїздом">
+            <figure class="relative aspect-[16/9] overflow-hidden bg-slate-100">
+              <a class="route-image-link" href="#" data-fancybox="routes-gallery" data-caption="Навчальна схема №3 — Кільцевий рух і з’їзд" aria-label="Відкрити навчальну схему №3">
               <svg class="h-full w-full" viewBox="0 0 640 360" fill="none" aria-hidden="true">
                 <path d="M0 110H640M0 250H640M190 0V360M450 0V360" stroke="#CBD5E1" stroke-width="54"/>
                 <path d="M0 110H640M0 250H640M190 0V360M450 0V360" stroke="#F8FAFC" stroke-width="2" stroke-dasharray="10 10"/>
@@ -164,6 +170,7 @@
                 <circle cx="55" cy="110" r="15" fill="#2563EB" stroke="white" stroke-width="6"/>
                 <circle cx="450" cy="300" r="15" fill="#2563EB" stroke="white" stroke-width="6"/>
               </svg>
+              </a>
               <figcaption class="absolute left-4 top-4 rounded-full bg-white/95 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">Навчальна схема №3</figcaption>
               <span class="absolute right-4 top-4 rounded-full bg-rose-100 px-3 py-1 text-xs font-semibold text-rose-800">Кільцевий рух</span>
             </figure>
@@ -176,7 +183,8 @@
             </div>
           </article>
           <article class="group flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition duration-300 ease-out hover:-translate-y-1 hover:shadow-xl">
-            <figure class="relative aspect-[16/9] overflow-hidden bg-slate-100" role="img" aria-label="Навчальна схема з поворотом на перехресті">
+            <figure class="relative aspect-[16/9] overflow-hidden bg-slate-100">
+              <a class="route-image-link" href="#" data-fancybox="routes-gallery" data-caption="Навчальна схема №5 — Поворот на перехресті" aria-label="Відкрити навчальну схему №5">
               <svg class="h-full w-full" viewBox="0 0 640 360" fill="none" aria-hidden="true">
                 <path d="M0 115H640M0 245H640M205 0V360M435 0V360" stroke="#CBD5E1" stroke-width="54"/>
                 <path d="M0 115H640M0 245H640M205 0V360M435 0V360" stroke="#F8FAFC" stroke-width="2" stroke-dasharray="10 10"/>
@@ -184,6 +192,7 @@
                 <circle cx="60" cy="245" r="15" fill="#2563EB" stroke="white" stroke-width="6"/>
                 <circle cx="500" cy="115" r="15" fill="#2563EB" stroke="white" stroke-width="6"/>
               </svg>
+              </a>
               <figcaption class="absolute left-4 top-4 rounded-full bg-white/95 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">Навчальна схема №5</figcaption>
               <span class="absolute right-4 top-4 rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-800">Поворот</span>
             </figure>
@@ -196,13 +205,15 @@
             </div>
           </article>
           <article class="group flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition duration-300 ease-out hover:-translate-y-1 hover:shadow-xl">
-            <figure class="relative aspect-[16/9] overflow-hidden bg-slate-100" role="img" aria-label="Навчальна схема з прямою ділянкою дороги та поворотом">
+            <figure class="relative aspect-[16/9] overflow-hidden bg-slate-100">
+              <a class="route-image-link" href="#" data-fancybox="routes-gallery" data-caption="Навчальна схема №1 — Прямий рух і поворот" aria-label="Відкрити навчальну схему №1">
               <svg class="h-full w-full" viewBox="0 0 640 360" fill="none" aria-hidden="true">
                 <path d="M0 115H640M0 245H640M205 0V360M435 0V360" stroke="#CBD5E1" stroke-width="54"/>
                 <path d="M60 245H205V115H500" stroke="#2563EB" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
                 <circle cx="60" cy="245" r="15" fill="#2563EB" stroke="white" stroke-width="6"/>
                 <circle cx="500" cy="115" r="15" fill="#2563EB" stroke="white" stroke-width="6"/>
               </svg>
+              </a>
               <figcaption class="absolute left-4 top-4 rounded-full bg-white/95 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">Навчальна схема №1</figcaption>
               <span class="absolute right-4 top-4 rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold text-emerald-800">Поворот</span>
             </figure>
@@ -213,13 +224,15 @@
             </div>
           </article>
           <article class="group flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition duration-300 ease-out hover:-translate-y-1 hover:shadow-xl">
-            <figure class="relative aspect-[16/9] overflow-hidden bg-slate-100" role="img" aria-label="Навчальна схема з кількома послідовними поворотами">
+            <figure class="relative aspect-[16/9] overflow-hidden bg-slate-100">
+              <a class="route-image-link" href="#" data-fancybox="routes-gallery" data-caption="Навчальна схема №4 — Послідовність поворотів" aria-label="Відкрити навчальну схему №4">
               <svg class="h-full w-full" viewBox="0 0 640 360" fill="none" aria-hidden="true">
                 <path d="M0 115H640M0 245H640M205 0V360M435 0V360" stroke="#CBD5E1" stroke-width="54"/>
                 <path d="M60 115H205V300H435V245H560" stroke="#2563EB" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
                 <circle cx="60" cy="115" r="15" fill="#2563EB" stroke="white" stroke-width="6"/>
                 <circle cx="560" cy="245" r="15" fill="#2563EB" stroke="white" stroke-width="6"/>
               </svg>
+              </a>
               <figcaption class="absolute left-4 top-4 rounded-full bg-white/95 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">Навчальна схема №4</figcaption>
               <span class="absolute right-4 top-4 rounded-full bg-rose-100 px-3 py-1 text-xs font-semibold text-rose-800">Кілька поворотів</span>
             </figure>
@@ -230,7 +243,8 @@
             </div>
           </article>
           <article class="group flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition duration-300 ease-out hover:-translate-y-1 hover:shadow-xl">
-            <figure class="relative aspect-[16/9] overflow-hidden bg-slate-100" role="img" aria-label="Навчальна схема з кільцевою ділянкою та виїздом">
+            <figure class="relative aspect-[16/9] overflow-hidden bg-slate-100">
+              <a class="route-image-link" href="#" data-fancybox="routes-gallery" data-caption="Навчальна схема №6 — Кільцева ділянка та виїзд" aria-label="Відкрити навчальну схему №6">
               <svg class="h-full w-full" viewBox="0 0 640 360" fill="none" aria-hidden="true">
                 <path d="M0 115H640M0 245H640M205 0V360M435 0V360" stroke="#CBD5E1" stroke-width="54"/>
                 <circle cx="320" cy="180" r="64" stroke="#CBD5E1" stroke-width="32"/>
@@ -238,6 +252,7 @@
                 <circle cx="60" cy="245" r="15" fill="#2563EB" stroke="white" stroke-width="6"/>
                 <circle cx="500" cy="180" r="15" fill="#2563EB" stroke="white" stroke-width="6"/>
               </svg>
+              </a>
               <figcaption class="absolute left-4 top-4 rounded-full bg-white/95 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">Навчальна схема №6</figcaption>
               <span class="absolute right-4 top-4 rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-800">Кільцевий рух</span>
             </figure>
@@ -375,7 +390,56 @@
       <section class="testimonials section-block" id="testimonials">
         <div class="section-heading">
           <h2>Відгуки кандидатів</h2>
-          <p>Зараз підтверджених відгуків немає. Додамо їх лише за згодою авторів.</p>
+          <p>Демонстраційні тексти для перегляду слайдера — це не реальні відгуки кандидатів.</p>
+        </div>
+        <div class="swiper reviews-swiper">
+          <div class="swiper-wrapper">
+            <article class="swiper-slide testimonial-card">
+              <div class="reviewer">
+                <span class="avatar" aria-hidden="true"></span>
+                <div>
+                  <h3>Демо-відгук 1</h3>
+                  <span class="rating">Демонстраційний приклад</span>
+                </div>
+              </div>
+              <p>Перед іспитом найбільше хвилювали перехрестя. Коли розклала ситуації на кроки й потренувалася на схемах, стало простіше зосередитися на пріоритеті та знаках.</p>
+            </article>
+            <article class="swiper-slide testimonial-card">
+              <div class="reviewer">
+                <span class="avatar" aria-hidden="true"></span>
+                <div>
+                  <h3>Демо-відгук 2</h3>
+                  <span class="rating">Демонстраційний приклад</span>
+                </div>
+              </div>
+              <p>Корисно було ще раз пройти повороти й кільцевий рух. Після кожної відповіді можна перечитати пояснення і зрозуміти, що саме пропустив.</p>
+            </article>
+            <article class="swiper-slide testimonial-card">
+              <div class="reviewer">
+                <span class="avatar" aria-hidden="true"></span>
+                <div>
+                  <h3>Демо-відгук 3</h3>
+                  <span class="rating">Демонстраційний приклад</span>
+                </div>
+              </div>
+              <p>Мені допомогло повторення типових дорожніх ситуацій Львова. Тренажер дає змогу не поспішати з відповіддю та перевірити себе перед практикою.</p>
+            </article>
+            <article class="swiper-slide testimonial-card">
+              <div class="reviewer">
+                <span class="avatar" aria-hidden="true"></span>
+                <div>
+                  <h3>Демо-відгук 4</h3>
+                  <span class="rating">Демонстраційний приклад</span>
+                </div>
+              </div>
+              <p>Повертався до схем кілька разів, особливо до послідовності поворотів. Так легше пригадати порядок дій і спокійніше підходити до підготовки.</p>
+            </article>
+          </div>
+          <div class="reviews-controls">
+            <button class="swiper-button-prev" type="button" aria-label="Попередні відгуки"></button>
+            <div class="swiper-pagination"></div>
+            <button class="swiper-button-next" type="button" aria-label="Наступні відгуки"></button>
+          </div>
         </div>
       </section>
 
@@ -492,6 +556,9 @@
       </div>
     </footer>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="js/app.js" defer></script>
   <script src="js/pdr-quiz.js" defer></script>
   <script src="assets/js/validation.js" defer></script>

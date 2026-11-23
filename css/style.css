@@ -355,6 +355,10 @@ svg {
   letter-spacing: -0.04em;
 }
 
+.typed-accent {
+  color: var(--color-green);
+}
+
 .hero-copy > p {
   max-width: 500px;
 }
@@ -698,6 +702,17 @@ svg {
   left: var(--space-4);
   max-width: calc(100% - var(--space-8) * 2);
   white-space: normal;
+}
+
+.route-image-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: zoom-in;
+}
+
+.route-image-link svg {
+  display: block;
 }
 
 .route-grid svg path[stroke="#2563EB"] {
@@ -1154,6 +1169,57 @@ footer a:focus-visible {
 
 .testimonial-card {
   padding: var(--space-8);
+}
+
+.reviews-swiper {
+  overflow: hidden;
+}
+
+.reviews-swiper .swiper-slide {
+  height: auto;
+}
+
+.reviews-swiper .testimonial-card {
+  height: 100%;
+}
+
+.reviews-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-8);
+  margin-top: var(--space-9);
+}
+
+.reviews-controls .swiper-button-prev,
+.reviews-controls .swiper-button-next {
+  position: static;
+  width: var(--space-18);
+  height: var(--space-18);
+  margin: var(--space-0);
+  border: var(--space-0);
+  background: transparent;
+  color: var(--color-green);
+  cursor: pointer;
+}
+
+.reviews-controls .swiper-button-prev::after,
+.reviews-controls .swiper-button-next::after {
+  font-size: var(--font-size-card);
+  font-weight: var(--font-weight-bold);
+}
+
+.reviews-controls .swiper-pagination {
+  position: static;
+  width: auto;
+}
+
+.reviews-controls .swiper-pagination-bullet {
+  background: var(--color-green);
+}
+
+.reviews-controls .swiper-pagination-bullet-active {
+  opacity: 1;
 }
 
 .reviewer {

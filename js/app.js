@@ -251,3 +251,72 @@ document.querySelectorAll(".mobile-navigation-links a").forEach((link) => {
 
 renderQuestion();
 renderJournal();
+
+document.addEventListener("DOMContentLoaded", () => {
+  const typedText = document.querySelector("#typed-text");
+  if (typedText && typeof window.Typed === "function") {
+    new window.Typed("#typed-text", {
+      strings: [
+        "Навчальні маршрути у Львові",
+        "Складні перехрестя крок за кроком",
+        "Впевнена підготовка до іспиту",
+        "Практика перед іспитом ТСЦ МВС Львова",
+      ],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true,
+    });
+  } else if (typedText) {
+    console.error("Не вдалося завантажити Typed.js для Hero-секції.");
+  }
+
+  document.querySelectorAll(".route-image-link").forEach((link) => {
+    const svg = link.querySelector("svg");
+    if (!svg) {
+      throw new Error("У прев'ю маршруту не знайдено SVG-зображення.");
+    }
+
+    const image = svg.cloneNode(true);
+    image.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+    const imageMarkup = new XMLSerializer()
+      .serializeToString(image)
+      .replace(/#2563EB/g, "#28645f");
+    link.href = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(imageMarkup)}`;
+  });
+
+  if (window.Fancybox && typeof window.Fancybox.bind === "function") {
+    window.Fancybox.bind("[data-fancybox='routes-gallery']", {
+      Carousel: { Transition: "fade" },
+      Images: { Panzoom: { maxScale: 3 } },
+    });
+  } else if (document.querySelector("[data-fancybox='routes-gallery']")) {
+    console.error("Не вдалося завантажити Fancybox для галереї маршрутів.");
+  }
+
+  if (typeof window.Swiper === "function") {
+    new window.Swiper(".reviews-swiper", {
+      loop: true,
+      spaceBetween: 30,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+      },
+      navigation: {
+        nextEl: ".reviews-swiper .swiper-button-next",
+        prevEl: ".reviews-swiper .swiper-button-prev",
+      },
+      pagination: {
+        el: ".reviews-swiper .swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        320: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 },
+      },
+    });
+  } else if (document.querySelector(".reviews-swiper")) {
+    console.error("Не вдалося завантажити Swiper для слайдера відгуків.");
+  }
+});
